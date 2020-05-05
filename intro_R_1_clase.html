@@ -372,7 +372,12 @@ summary {
 <p>Palabras clave: introducción a R, tutorial R principiantes, ordenar data frame</p>
 <p>Bienvenid@ a R!</p>
 <p>Recuerda que si tienes dudas, puedes escribirme a mi correo: <a href="mailto:jose.bermudez@cinvestav.mx" class="email">jose.bermudez@cinvestav.mx</a></p>
-<p>En ésta sesión vamos a aprender sobre: - Conceptos básicos de R - Leer tablas externas y explorar datos - Leer archivos fasta dentro de R y una descripción de sus contenidos</p>
+<p>En ésta sesión vamos a aprender sobre:</p>
+<ul>
+<li>Conceptos básicos de R</li>
+<li>Leer tablas externas y explorar datos</li>
+<li>Leer archivos fasta dentro de R y una descripción de sus contenidos</li>
+</ul>
 <div id="qué-es-r" class="section level5">
 <h5>Qué es R</h5>
 <p>R es un ambiente de software libre para hacer cómputo estadístico.</p>
@@ -401,7 +406,9 @@ summary {
 <li>Desde RStudio</li>
 <li>Desde la terminal ejecutando scripts: Rscript mi_script.R, este tipo de uso de R es necesario en clusters de cómputo sin interfaz gráfica.</li>
 </ul>
-<p>RStudio</p>
+</div>
+<div id="rstudio" class="section level5">
+<h5>RStudio</h5>
 <p>RStudio es un entorno de desarrollo integrado (IDE, por sus siglas en inglés), que facilita el uso y desarrollo de código en R.</p>
 <p>Tiene facilidades como autocompletar nombres de variables y funciones, poder ejecutar líneas de código específicas.</p>
 </div>
@@ -422,6 +429,16 @@ summary {
 <pre class="r"><code># otra manera de expresar potencias
 2**3</code></pre>
 <pre><code>## [1] 8</code></pre>
+</div>
+<div id="secuencias-de-números" class="section level5">
+<h5>Secuencias de números</h5>
+<p>Podemos obtener secuencias de números rápidamente con la siguente sintaxis NumeroInicial:NumeroFinal</p>
+<pre class="r"><code>5:18</code></pre>
+<pre><code>##  [1]  5  6  7  8  9 10 11 12 13 14 15 16 17 18</code></pre>
+<p>También podemos incluír números negativos, así como iniciar de un número mayor e ir hacia uno menor</p>
+<pre class="r"><code>23:-4</code></pre>
+<pre><code>##  [1] 23 22 21 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0 -1
+## [26] -2 -3 -4</code></pre>
 </div>
 <div id="variables-y-objetos" class="section level5">
 <h5>Variables y objetos</h5>
@@ -618,6 +635,8 @@ m</code></pre>
 </div>
 <div id="leyendo-tablas-en-r-e-inspecionando-su-contenido" class="section level5">
 <h5>Leyendo tablas en R e inspecionando su contenido</h5>
+<p>Para poder realizar la siguiente práctica necesitas descargar el archivo ensembl_info.txt disponible en el siguiente link:</p>
+<p><a href="ensembl_info.txt">ensembl file link</a></p>
 <p>IMPORTANTE: indicar en qué directorio está el archivo</p>
 <pre class="r"><code>ens_tab = read.table(&quot;/Users/beto/github.bbermudez/bbermudez.github.io/ensembl_info.txt&quot;)</code></pre>
 <p>En qué formato se leen las tablas a partir de archivos?</p>
@@ -1017,24 +1036,9 @@ barplot(tab_start)</code></pre>
 <div id="próximamente" class="section level5">
 <h5>Próximamente</h5>
 <p>Próximamente abordaremos paquetes de R específicos como ggplot2, GenomicRanges, etc. Tales tutoriales estarán disponibles en: <a href="https://bbermudez.github.io/" class="uri">https://bbermudez.github.io/</a></p>
-<p><strong>GRACIAS</strong></p>
-<p><strong>ggplot2</strong></p>
-<p><strong>las figuras de ggplot2 están compuestas por capas</strong></p>
-<p><strong>ggplot2 tiene su propia sintaxis</strong></p>
-<p><strong>Hay muchas capas que pueden añadir su toque personal a las gráficas de ggplot2</strong></p>
-<p><strong>Hay muchas capas que pueden añadir su toque personal a las gráficas de ggplot2</strong></p>
-<p><strong>Data Visualization cheat sheet</strong></p>
-<p><strong>biomaRt</strong></p>
-<p><strong>biomaRt</strong></p>
-<p><strong>Eligiendo un set de datos</strong></p>
-<p><strong>Una búsqueda de biomaRt tiene 3 elementos</strong></p>
-<p><strong>Eligiendo un set de datos</strong></p>
-<p><strong>Descargando todos los transcritos de humano del cromosoma X</strong></p>
-<p><strong>Construyendo una gráfica con ggplot2</strong></p>
-<p><strong>Construyendo una gráfica con ggplot2</strong></p>
-<p><strong>Los transcritos de pseudogenes son más cortos que los codificantes por su degradación genómica</strong></p>
-<p><strong>Otros datos disponibles via biomaRt</strong></p>
-<p><strong>getSequence</strong></p>
+</div>
+<div id="gracias" class="section level2">
+<h2>GRACIAS</h2>
 </div>
 
 
